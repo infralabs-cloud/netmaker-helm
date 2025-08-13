@@ -78,7 +78,7 @@ metadata:
 spec:
   storageClassName: {{ .Values.dns.RWX.storageClassName }}
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.dns.storageSize }}
